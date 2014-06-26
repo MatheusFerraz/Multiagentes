@@ -6,18 +6,17 @@ import jade.domain.FIPAAgentManagement.DFAgentDescription;
 import jade.domain.FIPAAgentManagement.ServiceDescription;
 import jade.lang.acl.ACLMessage;
 
-
-public class AgenteOrtopedista extends Agent {
+public class AgenteEndocrinologista extends Agent {
 	
-	private static final long serialVersionUID = 443420860553134695L;
+	private static final long serialVersionUID = 4259278883710078167L;
 
 	protected void setup() {
 		
 		ServiceDescription servico = new ServiceDescription();
-		servico.setType("Trata problemas musculares e ósseos");
+		servico.setType("Trata de problemas endócrinos");
 		servico.setName(this.getLocalName());
 		resgistrarServico(servico);
-		recebeMensagem("Problema Muscular", "Vou resolver os problemas musculares do paciente.");
+		recebeMensagem("Problema de glândula", "Vou resolver os problemas endócrinos do paciente.");
 		
 	}
 
@@ -35,7 +34,7 @@ public class AgenteOrtopedista extends Agent {
 		
 		addBehaviour (new CyclicBehaviour(this) {
 
-			private static final long serialVersionUID = -8313033846650166821L;
+			private static final long serialVersionUID = 3655543590919128887L;
 
 			public void action() {
 				ACLMessage msg = receive();
@@ -51,3 +50,4 @@ public class AgenteOrtopedista extends Agent {
 		});
 	}
 }
+

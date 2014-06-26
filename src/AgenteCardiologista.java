@@ -17,7 +17,7 @@ public class AgenteCardiologista extends Agent {
 		servico.setType("Trata de problemas cardíacos");
 		servico.setName(this.getLocalName());
 		resgistrarServico(servico);
-		RecebeMensagem("Problema Cardíaco", "Vou resolver os problemas cardíacos do paciente.");
+		recebeMensagem("Problema Cardíaco", "Vou resolver os problemas cardíacos do paciente.");
 		
 	}
 
@@ -31,7 +31,7 @@ public class AgenteCardiologista extends Agent {
 		}
 	}
 	
-	protected void RecebeMensagem (final String mensagem, final String resposta) {
+	protected void recebeMensagem (final String mensagem, final String resposta) {
 		
 		addBehaviour (new CyclicBehaviour(this) {
 
