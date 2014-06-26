@@ -22,42 +22,42 @@ public class AgentePaciente extends Agent {
 			if (argumento.equalsIgnoreCase("Problema Neurológico")) {
 				ServiceDescription servico = new ServiceDescription();
 				servico.setType("Trata problemas neurológicos");
-				SolicitaNotificacao(servico, "Problema Neurológico");
+				solicitaNotificacao(servico, "Problema Neurológico");
 			}
 			if (argumento.equalsIgnoreCase("Problema Muscular")) {
 				ServiceDescription servico = new ServiceDescription();
 				servico.setType("Trata problemas musculares e ósseos");
-				SolicitaNotificacao(servico, "Problema Muscular");
+				solicitaNotificacao(servico, "Problema Muscular");
 			}
 			if (argumento.equalsIgnoreCase("Problema Cardíaco")) {
 				ServiceDescription servico = new ServiceDescription();
 				servico.setType("Trata de problemas cardíacos");
-				SolicitaNotificacao(servico, "Problema Cardíaco");
+				solicitaNotificacao(servico, "Problema Cardíaco");
 			}
 			if (argumento.equalsIgnoreCase("Problema Ocular")) {
 				ServiceDescription servico = new ServiceDescription();
 				servico.setType("Trata de problemas dos olhos");
-				SolicitaNotificacao(servico, "Problema Ocular");
+				solicitaNotificacao(servico, "Problema Ocular");
 			}
 			if (argumento.equalsIgnoreCase("Problema Renal")) {
 				ServiceDescription servico = new ServiceDescription();
 				servico.setType("Trata de problemas renais");
-				SolicitaNotificacao(servico, "Problema Renal");
+				solicitaNotificacao(servico, "Problema Renal");
 			}
 			if (argumento.equalsIgnoreCase("Problema da Pele")) {
 				ServiceDescription servico = new ServiceDescription();
 				servico.setType("Trata de problemas dermatológicos");
-				SolicitaNotificacao(servico, "Problema da Pele");
+				solicitaNotificacao(servico, "Problema da Pele");
 			}
 			if (argumento.equalsIgnoreCase("Problema de glândula")) {
 				ServiceDescription servico = new ServiceDescription();
 				servico.setType("Trata de problemas endócrinos");
-				SolicitaNotificacao(servico, "Problema de glândula");
+				solicitaNotificacao(servico, "Problema de glândula");
 			}
 			if (argumento.equalsIgnoreCase("Problema psiquiátrico")) {
 				ServiceDescription servico = new ServiceDescription();
 				servico.setType("Trata de problemas psiquiátricos");
-				SolicitaNotificacao(servico, "Problema psiquiátrico");
+				solicitaNotificacao(servico, "Problema psiquiátrico");
 			}
 		}
 
@@ -81,7 +81,7 @@ public class AgentePaciente extends Agent {
 
 	}
 
-	protected void SolicitaNotificacao(final ServiceDescription sd,
+	protected void solicitaNotificacao(final ServiceDescription sd,
 			final String Solicitacao) {
 
 		DFAgentDescription dfd = new DFAgentDescription();

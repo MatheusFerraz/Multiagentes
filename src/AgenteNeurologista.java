@@ -6,7 +6,6 @@ import jade.domain.FIPAAgentManagement.DFAgentDescription;
 import jade.domain.FIPAAgentManagement.ServiceDescription;
 import jade.lang.acl.ACLMessage;
 
-
 public class AgenteNeurologista extends Agent {
 	
 	private static final long serialVersionUID = 3464874314236807824L;
@@ -17,7 +16,7 @@ public class AgenteNeurologista extends Agent {
 		servico.setType("Trata problemas neurológicos");
 		servico.setName(this.getLocalName());
 		resgistrarServico(servico);
-		RecebeMensagem("Problema Neurológico", "Vou resolver o problema neurológico do paciente.");
+		recebeMensagem("Problema Neurológico", "Vou resolver o problema neurológico do paciente.");
 		
 	}
 
@@ -31,7 +30,7 @@ public class AgenteNeurologista extends Agent {
 		}
 	}
 	
-	protected void RecebeMensagem (final String mensagem, final String resposta) {
+	protected void recebeMensagem (final String mensagem, final String resposta) {
 		
 		addBehaviour (new CyclicBehaviour(this) {
 

@@ -17,7 +17,7 @@ public class AgenteOrtopedista extends Agent {
 		servico.setType("Trata problemas musculares e ósseos");
 		servico.setName(this.getLocalName());
 		resgistrarServico(servico);
-		RecebeMensagem("Problema Muscular", "Vou resolver os problemas musculares do paciente.");
+		recebeMensagem("Problema Muscular", "Vou resolver os problemas musculares do paciente.");
 		
 	}
 
@@ -31,7 +31,7 @@ public class AgenteOrtopedista extends Agent {
 		}
 	}
 	
-	protected void RecebeMensagem (final String mensagem, final String resposta) {
+	protected void recebeMensagem (final String mensagem, final String resposta) {
 		
 		addBehaviour (new CyclicBehaviour(this) {
 

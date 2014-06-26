@@ -16,7 +16,7 @@ public class AgentePsiquiatra extends Agent {
 		servico.setType("Trata de problemas psiquiátricos");
 		servico.setName(this.getLocalName());
 		resgistrarServico(servico);
-		RecebeMensagem("Problema psiquiátrico", "Vou resolver os problemas psiquiátricos do paciente.");
+		recebeMensagem("Problema psiquiátrico", "Vou resolver os problemas psiquiátricos do paciente.");
 		
 	}
 
@@ -30,7 +30,7 @@ public class AgentePsiquiatra extends Agent {
 		}
 	}
 	
-	protected void RecebeMensagem (final String mensagem, final String resposta) {
+	protected void recebeMensagem (final String mensagem, final String resposta) {
 		
 		addBehaviour (new CyclicBehaviour(this) {
 

@@ -16,7 +16,7 @@ public class AgenteEndocrinologista extends Agent {
 		servico.setType("Trata de problemas endócrinos");
 		servico.setName(this.getLocalName());
 		resgistrarServico(servico);
-		RecebeMensagem("Problema de glândula", "Vou resolver os problemas endócrinos do paciente.");
+		recebeMensagem("Problema de glândula", "Vou resolver os problemas endócrinos do paciente.");
 		
 	}
 
@@ -30,7 +30,7 @@ public class AgenteEndocrinologista extends Agent {
 		}
 	}
 	
-	protected void RecebeMensagem (final String mensagem, final String resposta) {
+	protected void recebeMensagem (final String mensagem, final String resposta) {
 		
 		addBehaviour (new CyclicBehaviour(this) {
 
