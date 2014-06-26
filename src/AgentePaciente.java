@@ -59,6 +59,21 @@ public class AgentePaciente extends Agent {
 				servico.setType("Trata de problemas psiquiátricos");
 				solicitaNotificacao(servico, "Problema psiquiátrico");
 			}
+			if (argumento.equalsIgnoreCase("Problema de Pele")) {
+				ServiceDescription servico = new ServiceDescription();
+				servico.setType("Trata de problemas de pele");
+				solicitaNotificacao(servico, "Problema de Pele");
+			}
+			if (argumento.equalsIgnoreCase("Problema Urinário")) {
+				ServiceDescription servico = new ServiceDescription();
+				servico.setType("Trata de problemas do sistema unirário");
+				solicitaNotificacao(servico, "Problema Urinário");
+			}
+			if (argumento.equalsIgnoreCase("Problema de Visão")) {
+				ServiceDescription servico = new ServiceDescription();
+				servico.setType("Trata de problemas de visão");
+				solicitaNotificacao(servico, "Problema de Visão");
+			}
 		}
 
 		addBehaviour(new CyclicBehaviour(this) {
